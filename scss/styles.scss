@@ -1,0 +1,245 @@
+@import "fonts";
+@import "colors";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: $blanco;
+}
+main{
+  background-color: $blanco;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+$separador_vertical: 15vh;
+$altura_section: 100vh - $separador_vertical;
+
+body{
+  scroll-behavior: smooth;
+  scroll-margin: 0;
+}
+
+header{
+  padding-bottom: 0px;
+}
+
+.navbar{
+  padding: 0px;
+}
+
+.navbar-brand{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+p{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+#navbar_farosur {
+  z-index: 3;
+  position: fixed;
+  background: rgb(249, 246, 244);
+  background: linear-gradient(180deg, rgba(249,246,244,1) 0%, rgba(249,246,244,1) 91%, rgba(249,246,244,0.6643032212885154) 99%, rgba(249,246,244,0) 100%);
+  width: 100vw;
+  height: $separador_vertical;
+  #logo_nav{
+    height: 100px;
+  }
+  #span_logo_faro{
+    font-family: $baloobhaina2;
+    font-weight: 700;
+    color: $naranja;
+    font-size: xx-large;
+  }
+  #span_logo_sur{
+    font-family: $baloobhaina2;
+    font-weight: 700;
+    color: $celeste;
+    font-size: xx-large;
+  }
+  #span_logo_subtitle_farosur{
+    font-family: $manrope;
+    font-size:small;
+    color: $gris;
+  }
+}
+
+main{
+  padding-top: $separador_vertical;
+
+  #inicio{
+    background-image: url(../img/inicio_bg.png);
+    background-size:contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    scroll-margin-top: $separador_vertical;
+    padding: 10vi;
+    display: flex;
+    flex-direction: column;
+    
+    
+
+      @media (max-width: 875px) {
+        padding-top: $separador_vertical * 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+      }
+      
+      #titulo_inicio{
+        font-weight: 600;
+        color: #DE5935;
+        font-family: $baloobhaina2;
+        font-size: 80px;
+        line-height: 0.75;
+        @media (max-width: 875px) {
+          font-size: 100px;
+        }
+      }
+
+      #subtitulo_inicio{
+        color: $negro;
+        font-family: $manrope;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      #descargar_catalogo_img{
+        height: 90px;
+        width: auto;
+        @media (max-width: 875px) {
+          width: 100%;
+          height: auto;
+          overflow: hidden;
+        }
+    }
+  }
+
+  #como_funciona{
+    padding-left: 10vi;
+    padding-top: calc($separador-vertical / 2);
+    color: $negro;
+    background-image: url(../img/como_funciona_bg.png);
+    background-size:contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    border-top: $separador_vertical solid $blanco;
+    @media (max-width: 1120px) {
+      background-image: none;
+      align-items: center;
+    }
+    #ul_como_funciona{
+      list-style: url("/img/marcador.png");
+    }
+    .p_como_funciona{
+      font-family: $manrope;
+      font-size: large;
+      font-weight: 500;
+    }
+    .h2_como_funciona{
+      font-family: $manrope;
+      color: $celeste;
+      font-size: larger;
+      font-weight: 700;
+      list-style-type: square;
+    }
+    .negrita{
+      font-weight: 900;
+    }
+  }
+
+  #oferta_del_mes{
+    height: $altura_section;
+    background-color: $blanco;
+    scroll-margin-top: $separador_vertical;
+    overflow: hidden;
+  }
+
+  #catalogo{
+    height: $altura_section;
+    padding: 0px;
+    scroll-margin-top: $separador_vertical;
+  }
+}
+
+#navbar-brand{
+  display: flex;
+  flex-direction: row;
+}
+
+#container_nav{
+  border-bottom: 1px solid $gris;
+  height: 30px; 
+}
+
+#numero_ph{
+  display: inline;
+}
+#numero_wp{
+  display: inline;
+}
+#numero_gm{
+  display: inline;
+}
+svg{
+  display: inline;
+}
+
+.links_contacto{
+  text-decoration: none;
+  color: $negro;
+}
+#row_numeros{
+  padding-bottom: 5px;
+  font-size: 13px;
+  border-bottom: 1px solid #000000;
+}
+
+#copyright-link{
+  text-decoration: none;
+  color: #8e8e8e;
+}
+
+.li_h2{
+  list-style: url(/img/square_li.png);
+}
+
+#a_catalogo{
+  padding-right: 0px;
+}
+
+#img_mt380{
+  height: 25vi;
+}
+
+#img_mt980{
+  height: 25vi;
+}
+
+#contenido_como_funciona{
+  position: relative;
+  z-index: 2;
+  padding-bottom: 20vh;
+}
+
+#como_funciona_bl_bg{
+  position: absolute;
+  height: 20vh;
+  bottom: 0px;
+  left: -10vw;
+  z-index: 1;
+  @media (max-width: 1120px) {
+    visibility: hidden;
+  }
+}

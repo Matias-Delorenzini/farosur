@@ -1,0 +1,255 @@
+@font-face {
+  font-family: "BalooBhaina2";
+  src: url("/fonts/Baloo_Bhaina_2/BalooBhaina2-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope/Manrope-VariableFont_wght.ttf");
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F9F6F4;
+}
+
+main {
+  background-color: #F9F6F4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+  scroll-margin: 0;
+}
+
+header {
+  padding-bottom: 0px;
+}
+
+.navbar {
+  padding: 0px;
+}
+
+.navbar-brand {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+#navbar_farosur {
+  z-index: 3;
+  position: fixed;
+  background: rgb(249, 246, 244);
+  background: linear-gradient(180deg, rgb(249, 246, 244) 0%, rgb(249, 246, 244) 91%, rgba(249, 246, 244, 0.6643032213) 99%, rgba(249, 246, 244, 0) 100%);
+  width: 100vw;
+  height: 15vh;
+}
+#navbar_farosur #logo_nav {
+  height: 100px;
+}
+#navbar_farosur #span_logo_faro {
+  font-family: BalooBhaina2;
+  font-weight: 700;
+  color: #DE5935;
+  font-size: xx-large;
+}
+#navbar_farosur #span_logo_sur {
+  font-family: BalooBhaina2;
+  font-weight: 700;
+  color: #99B3BF;
+  font-size: xx-large;
+}
+#navbar_farosur #span_logo_subtitle_farosur {
+  font-family: Manrope;
+  font-size: small;
+  color: #8e8e8e;
+}
+
+main {
+  padding-top: 15vh;
+}
+main #inicio {
+  background-image: url(../img/inicio_bg.png);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  scroll-margin-top: 15vh;
+  padding: 10vi;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 875px) {
+  main #inicio {
+    padding-top: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: none;
+  }
+}
+main #inicio #titulo_inicio {
+  font-weight: 600;
+  color: #DE5935;
+  font-family: BalooBhaina2;
+  font-size: 80px;
+  line-height: 0.75;
+}
+@media (max-width: 875px) {
+  main #inicio #titulo_inicio {
+    font-size: 100px;
+  }
+}
+main #inicio #subtitulo_inicio {
+  color: #000000;
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 500;
+}
+main #inicio #descargar_catalogo_img {
+  height: 90px;
+  width: auto;
+}
+@media (max-width: 875px) {
+  main #inicio #descargar_catalogo_img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+}
+main #como_funciona {
+  padding-left: 10vi;
+  padding-top: 7.5vh;
+  color: #000000;
+  background-image: url(../img/como_funciona_bg.png);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  border-top: 15vh solid #F9F6F4;
+}
+@media (max-width: 1120px) {
+  main #como_funciona {
+    background-image: none;
+    align-items: center;
+  }
+}
+main #como_funciona #ul_como_funciona {
+  list-style: url("/img/marcador.png");
+}
+main #como_funciona .p_como_funciona {
+  font-family: Manrope;
+  font-size: large;
+  font-weight: 500;
+}
+main #como_funciona .h2_como_funciona {
+  font-family: Manrope;
+  color: #99B3BF;
+  font-size: larger;
+  font-weight: 700;
+  list-style-type: square;
+}
+main #como_funciona .negrita {
+  font-weight: 900;
+}
+main #oferta_del_mes {
+  height: 85vh;
+  background-color: #F9F6F4;
+  scroll-margin-top: 15vh;
+  overflow: hidden;
+}
+main #catalogo {
+  height: 85vh;
+  padding: 0px;
+  scroll-margin-top: 15vh;
+}
+
+#navbar-brand {
+  display: flex;
+  flex-direction: row;
+}
+
+#container_nav {
+  border-bottom: 1px solid #8e8e8e;
+  height: 30px;
+}
+
+#numero_ph {
+  display: inline;
+}
+
+#numero_wp {
+  display: inline;
+}
+
+#numero_gm {
+  display: inline;
+}
+
+svg {
+  display: inline;
+}
+
+.links_contacto {
+  text-decoration: none;
+  color: #000000;
+}
+
+#row_numeros {
+  padding-bottom: 5px;
+  font-size: 13px;
+  border-bottom: 1px solid #000000;
+}
+
+#copyright-link {
+  text-decoration: none;
+  color: #8e8e8e;
+}
+
+.li_h2 {
+  list-style: url(/img/square_li.png);
+}
+
+#a_catalogo {
+  padding-right: 0px;
+}
+
+#img_mt380 {
+  height: 25vi;
+}
+
+#img_mt980 {
+  height: 25vi;
+}
+
+#contenido_como_funciona {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 20vh;
+}
+
+#como_funciona_bl_bg {
+  position: absolute;
+  height: 20vh;
+  bottom: 0px;
+  left: -10vw;
+  z-index: 1;
+}
+@media (max-width: 1120px) {
+  #como_funciona_bl_bg {
+    visibility: hidden;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
